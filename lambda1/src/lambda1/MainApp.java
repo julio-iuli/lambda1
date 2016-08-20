@@ -9,12 +9,13 @@ public class MainApp {
 		Usuario user1 = new Usuario("Julio", 150, true);
 		Usuario user2 = new Usuario("Maria", 50, false);
 		Usuario user3 = new Usuario("Antônio", 10, false);
+		Usuario user4 = new Usuario("João", 10, false);
 		
 		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 		usuarios.add(user1);
 		usuarios.add(user2);
 		usuarios.add(user3);
-
+		usuarios.add(user4);
 		//método com lambda
 		usuarios.forEach(u -> {
 			System.out.println(u.getNome() + "moderador? " + u.isModerador());
